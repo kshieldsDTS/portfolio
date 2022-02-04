@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 function Nav(props) {
-    const [openMenu, setOpenMenu] = useState(false)
     function hamburgerClick(){
-        if (openMenu) {
-            setOpenMenu(false)
+        if (props.openMenu) {
+            props.setOpenMenu(false)
         } else {
-            setOpenMenu(true)
+            props.setOpenMenu(true)
         }
     }
     return (
@@ -17,7 +16,7 @@ function Nav(props) {
                 <span className="name-span">Kurt Shields</span> 
                 <span className="title-span">Software Engineer</span>   
             </div>
-            {!openMenu ? <button onClick={hamburgerClick}>Hamburger Menu</button> :
+            {!props.openMenu ? <button onClick={hamburgerClick}>Hamburger Menu</button> :
             <div className="links-wrapper">
                 <Link to='/'>Home</Link>
                 <Link to='/about'>About</Link>
