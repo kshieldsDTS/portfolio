@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.name-span {
+  font-size: 2em;
+}
+.links-wrapper {
+  
+}
