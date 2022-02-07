@@ -12,6 +12,10 @@ function App() {
   const [openMenu, setOpenMenu] = useState(false)
   return (
     <div className="App">
+      <Nav
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
+      />
       <Routes>
         <Route path='/' element={<Welcome />}/>
         <Route path='/about' element={<About />}/>

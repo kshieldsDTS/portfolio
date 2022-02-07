@@ -2,19 +2,27 @@ import React from 'react';
 
 function Welcome(props) {
     return (
-			<div>
-				<div className='loader-wrapper'>
-					<div className='loader_one loader'></div>
-					<div className='loader_two loader'></div>
-					<div className='loader_three loader'></div>
-					<div className='loader_four loader'></div>
-					<div className='loader_five loader'></div>
-					<div className='loader_six loader'></div>
+			<section className='loader-container'>
+				<div className='loader-div'>
+					<div className='loader-div-inner'>
+						<span className='one h6 loader-span' />
+						<span className='two h3 loader-span' />
+					</div>
 				</div>
-				<div class='hexagon'>
-					<span></span>
+				<div className='loader-div'>
+					<div className='loader-div-inner'>
+						<span className='one h1 loader-span'></span>
+						<span className='two h4 loader-span'></span>
+					</div>
 				</div>
-			</div>
+				<div className='loader-div'>
+					<div className='loader-div-inner'>
+						<span className='one h5 loader-span' />
+						<span className='one h2 loader-span' />
+					</div>
+				</div>
+				<div className='k'>KS</div>
+			</section>
 		);
 }
 

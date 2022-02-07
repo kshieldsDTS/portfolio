@@ -3,7 +3,7 @@ html body {
 	font-family: 'EB Garamond', serif;
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: #113;
 }
 .app {
   display: flex;
@@ -11,6 +11,7 @@ html body {
 .nav-wrapper {
 	display: flex;
 	justify-content: space-between;
+  margin-left: 10px;
 }
 .header-wrapper {
 	display: flex;
@@ -18,7 +19,41 @@ html body {
 	text-align: center;
 }
 .name-span {
+  opacity: 0;
 	font-size: 2em;
+  color: red;
+  animation: fadeinred 1s ease 6s forwards
+}
+.title-span {
+  opacity: 0;
+  color: red;
+  animation: fadeinred 1s ease 7s forwards
+}
+.hamburger {
+  color: red;
+  background-color: transparent;
+  border: 0;
+}
+.hb-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  margin: 10px;
+}
+.hb-line {
+  background-color: red;
+  width: 30px;
+  height: 5px;
+  margin: 3px;
+}
+.hb-top-change {
+  animation: top-change 0.5s ease forwards;
+}
+.hb-middle-change {
+  animation: fadeout 0.5s ease forwards;
+}
+.hb-bottom-change {
+  animation: bottom-change 0.5s ease forwards;
 }
 .about-wrapper {
   display: flex;
@@ -80,7 +115,7 @@ html body {
 }
 .k {
   opacity: 0;
-  animation: kfade 3s ease 2.4s 1 forwards;
+  animation: fadeinred 3s ease 2.4s 1 forwards;
   color: red;
   font-size: xx-large;
 }
@@ -120,12 +155,23 @@ html body {
   100%{top:0;height:100%;box-shadow: 0px 0px 5px 1px red}
 }
 
-@keyframes kfade {
+@keyframes fadeinred {
   0%{opacity:0;text-shadow: 0px 10px 5px red, 0px -10px 5px, 10px 0px 5px, -10px 0px 5px}
-  100%{opacity:1;text-shadow: 0px 0px 5px red}
+  40%{opacity:1;text-shadow: 0px 0px 5px red}
+  100%{opacity:1;text-shadow: 0px 0px 0px}
 }
 
 @keyframes fadeout {
   0%{opacity:1}
   100%{opacity:0}
+}
+
+@keyframes top-change {
+  0%{}
+  100%{transform: rotate(45deg) translate(5px, 10px)}
+}
+
+@keyframes bottom-change {
+  0%{}
+  100%{transform: rotate(-45deg) translate(5px, -10px)}
 }

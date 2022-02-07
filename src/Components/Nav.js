@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 function Nav(props) {
-    function hamburgerClick(){
+    function handleClick(){
         if (props.openMenu) {
             props.setOpenMenu(false)
         } else {
@@ -15,15 +15,19 @@ function Nav(props) {
                 <span className="name-span">Kurt Shields</span> 
                 <span className="title-span">Software Engineer</span>   
             </div>
-            {!props.openMenu ? <button onClick={hamburgerClick}>Hamburger Menu</button> :
+            {!props.openMenu ? <button className="hamburger" onClick={handleClick}>Hamburger Menu</button> :
             <div className="links-wrapper">
                 <Link to='/'>Home</Link>
                 <Link to='/about'>About</Link>
                 <Link to='/projects'>Projects</Link>
                 <Link to='/contact'>Contact</Link>
-                <button onClick={hamburgerClick}>X</button>    
+                <button className="hamburger" onClick={handleClick}>X</button>    
             </div>}
-            
+            <div className="hb-wrapper" onClick={handleClick}>
+                <div className={!props.openMenu ? 'hb-line' : 'hb-line hb-top-change'}></div>
+                <div className={!props.openMenu ? 'hb-line' : 'hb-line hb-middle-change'}></div>
+                <div className={!props.openMenu ? 'hb-line' : 'hb-line hb-bottom-change'}></div>
+            </div>
         </div>
     );
 }
