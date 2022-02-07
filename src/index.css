@@ -45,12 +45,22 @@ html body {
   width: 30px;
   height: 5px;
   margin: 3px;
+  animation: fadeinred 1s ease 7s forwards;
+}
+.hb-top {
+  animation: top-return 0.5s ease forwards;
 }
 .hb-top-change {
   animation: top-change 0.5s ease forwards;
 }
+.hb-middle {
+  animation: fadeinred 1s ease forwards;
+}
 .hb-middle-change {
   animation: fadeout 0.5s ease forwards;
+}
+.hb-bottom {
+  animation: bottom-return 0.5s ease forwards;
 }
 .hb-bottom-change {
   animation: bottom-change 0.5s ease forwards;
@@ -171,7 +181,17 @@ html body {
   100%{transform: rotate(45deg) translate(5px, 10px)}
 }
 
+@keyframes top-return {
+  0%{transform: rotate(45deg) translate(5px, 10px)}
+  100%{}
+}
+
 @keyframes bottom-change {
   0%{}
   100%{transform: rotate(-45deg) translate(5px, -10px)}
+}
+
+@keyframes bottom-return {
+  0%{transform: rotate(-45deg) translate(5px, -10px)}
+  100%{}
 }
