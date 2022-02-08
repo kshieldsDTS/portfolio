@@ -16,7 +16,7 @@ function About(props) {
 					up with an intense Software Engineering Immersive at General Assembly,
 					and I am looking to start my career in the industry.
                 </p>
-                <p>
+                <div>
                     I've recently been using: 
                     <ul>
                         <li>React</li>
@@ -25,7 +25,7 @@ function About(props) {
                         <li>PostgresSQL</li>
                         <li>MongoDB</li>     
                     </ul>
-                </p>	
+                </div>	
 			</div>
 		);
 }
