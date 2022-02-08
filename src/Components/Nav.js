@@ -16,14 +16,6 @@ function Nav(props) {
 						<span className='name-span'>Kurt Shields</span>
 						<span className='title-span'>Software Engineer</span>
 					</div>
-					{/* {!props.openMenu ? <button className="hamburger" onClick={handleClick}>Hamburger Menu</button> :
-            <div className="links-wrapper">
-                <Link to='/'>Home</Link>
-                <Link to='/about'>About</Link>
-                <Link to='/projects'>Projects</Link>
-                <Link to='/contact'>Contact</Link>
-                <button className="hamburger" onClick={handleClick}>X</button>    
-            </div>} */}
 					<div className='hb-wrapper' onClick={handleClick}>
 						<div
 							className={
@@ -77,6 +69,15 @@ function Nav(props) {
                                 onClick={handleClick}>
 								Contacts
 							</li>
+						</Link>
+						<Link to='../Assets/Kurt Shields Resume 2-8.pdf'>
+							<li 
+								className={
+									props.openMenu ? 'navlink link-four' : 'navlink hidden-nav-link-four'
+								}
+								onClick={handleClick}>
+									Resume
+								</li>
 						</Link>
 					</ul>
 				</nav>

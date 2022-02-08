@@ -17,7 +17,7 @@ function About(props) {
                 <div className='p-wrapper'>
                     <div className='gold-one'></div>
                 <p className='about-p about-p-two'>
-                    While my life took me on a detour down a different industry for over a decade, I have returned to my first passion. I began by getting caught up with an intense Software Engineering Immersive at General Assembly, and I am looking to start my career in the industry.
+                    While my life took me on a detour down a different industry for over a decade, I have returned to my first passion. I began by getting caught up with an intense Software Engineering Immersive at General Assembly, and I am looking forward to starting my career in the exciting and fast paced software development industry.
                 </p>
                 </div>
                 <div>
