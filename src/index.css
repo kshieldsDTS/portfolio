@@ -156,6 +156,29 @@ a {
 .about-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+.about-p {
+  width: 80%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.p-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.gold-one {
+  width: 1px;
+  background-color: gold;
+  animation: glow 5s ease infinite;
+}
+.gold-two {
+  height: 1px;
+  width: 50%;
+  background-color: gold;
+  animation: glow 5s ease infinite;
 }
 .loader-container {
   display: flex;
@@ -283,4 +306,12 @@ a {
 @keyframes bottom-return {
   0%{transform: rotate(-45deg) translate(5px, -10px)}
   100%{}
+}
+:root {
+  --animation-time: 2s;
+}
+@keyframes glow {
+  0%{box-shadow: 0 0 0px 0px gold;}
+  50%{box-shadow: 0 0 10px 2px gold;}
+  100%{box-shadow: 0 0 0px 0px gold;}
 }
