@@ -30,12 +30,12 @@ html body {
   opacity: 0;
 	font-size: 2em;
   color: #FFD700;
-  animation: fadeinred 1s ease 3.2s forwards
+  animation: fadein 1s ease 3.2s forwards
 }
 .title-span {
   opacity: 0;
   color: #FFD700;
-  animation: fadeinred 1s ease 3.5s forwards
+  animation: fadein 1s ease 3.5s forwards
 }
 .hamburger {
   color: #FFD700;
@@ -48,7 +48,7 @@ html body {
   width: 30px;
   margin: 30px;
   opacity: 0;
-  animation: fadeinred 1s ease 3.8s forwards;
+  animation: fadein 1s ease 3.8s forwards;
 }
 .hb-line {
   background-color: #FFD700;
@@ -63,7 +63,7 @@ html body {
   animation: top-change 0.5s ease forwards;
 }
 .hb-middle {
-  animation: fadeinred 1s ease forwards;
+  animation: fadein 1s ease forwards;
 }
 .hb-middle-change {
   animation: fadeout 0.5s ease forwards;
@@ -80,10 +80,9 @@ html body {
   position: absolute;
   right: 0;
   top: 10%;
+  z-index: 1;
 }
 .show-menu {
-  /* animation: drop-down 0.5s ease 1 forwards;
-  transform-origin: top center; */
   opacity: 1;
   transform: scaleY(1);
   transform-origin: top center;
@@ -95,9 +94,6 @@ html body {
   transform-origin: top center;
   transition: opacity 0.3s, height 0.3s, transform 0.3s;
   transition-delay: 0.3s;
-  /* animation: fade-up 0.3s ease 0.3s 1 forwards; */
-  /* transform-origin: top center; */
-  /* transition: height 0.3s, transform 2s; */
 }
 .link-list {
   margin: 15px;
@@ -108,23 +104,47 @@ html body {
   color: #FFD700;
   font-size: larger;
   padding: 15px;
-  opacity: 0;
 }
 .link-one {
-  animation: slide-open 0.3s linear 0.5s 1 forwards;
+  opacity: 1;
+  transform: scaleX(1);
   transform-origin: right center;
+  transition: opacity 0.3s, width 0.3s, transform 0.3s;
+  transition-delay: 0.3s;
 }
 .link-two {
-  animation: slide-open 0.3s linear 0.6s 1 forwards;
+  opacity: 1;
+  transform: scaleX(1);
   transform-origin: right center;
+  transition: opacity 0.3s, width 0.3s, transform 0.3s;
+  transition-delay: 0.4s;
 }
 .link-three {
-  animation: slide-open 0.3s linear 0.7s 1 forwards;
+  opacity: 1;
+  transform: scaleX(1);
   transform-origin: right center;
+  transition: opacity 0.3s, width 0.3s, transform 0.3s;
+  transition-delay: 0.5s;
 }
-.hidden-nav-link {
-  animation: slide-closed 0.3s linear 1 forwards;
-  transform-origin: left center;
+.hidden-nav-link-one {
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: opacity 0.3s, width 0.3s, transform 0.3s;
+  transition-delay: 0.2s;
+}
+.hidden-nav-link-two {
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: opacity 0.3s, width 0.3s, transform 0.3s;
+  transition-delay: 0.1s;
+}
+.hidden-nav-link-three {
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: opacity 0.3s, width 0.3s, transform 0.3s;
 }
 .about-wrapper {
   display: flex;
@@ -136,6 +156,7 @@ html body {
   justify-content: center;
   align-items: center;
   animation: fadeout 1s ease 2.5s 1 forwards;
+  z-index: -1;
 }
 .loader-div {
   position: absolute;
@@ -186,7 +207,7 @@ html body {
 }
 .k {
   opacity: 0;
-  animation: fadeinred 1.8s ease 1.4s 1 forwards;
+  animation: fadein 1.8s ease 1.4s 1 forwards;
   color: #FFD700;
   font-size: xx-large;
 }
@@ -226,7 +247,7 @@ html body {
   100%{top:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
 }
 
-@keyframes fadeinred {
+@keyframes fadein {
   0%{opacity:0;text-shadow: 0px 10px 5px #FFD700, 0px -10px 5px, 10px 0px 5px, -10px 0px 5px}
   30%{opacity:1;text-shadow: 0px 0px 5px #FFD700}
   100%{opacity:1;text-shadow: 0px 0px 0px}
@@ -255,23 +276,4 @@ html body {
 @keyframes bottom-return {
   0%{transform: rotate(-45deg) translate(5px, -10px)}
   100%{}
-}
-
-@keyframes drop-down {
-  0%{transform: scaleY(0); opacity: 0}
-  100%{transform: scaleY(1); opacity: 1}
-}
-
-@keyframes fade-up {
-  0%{transform: scaleY(1); opacity: 1}
-  100%{transform: scaleY(0); opacity: 0}
-}
-
-@keyframes slide-open {
-  0%{transform: scaleX(0); opacity: 0}
-  100%{transform: scaleY(1); opacity: 1}
-}
-@keyframes slide-closed {
-  0%{transform: scaleX(1); opacity: 1}
-  100%{transform: scaleX(0); opacity: 0}
 }

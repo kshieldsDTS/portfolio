@@ -34,13 +34,13 @@ function Nav(props) {
         <nav className={props.openMenu ? 'menu show-menu' : 'menu closed-menu'}>
             <ul className='link-list'>
                 <Link to='/about'>
-                    <li className={props.openMenu ? 'navlink link-one' : 'navlink hidden-nav-link'}>About Me</li>    
+                    <li className={props.openMenu ? 'navlink link-one' : 'navlink hidden-nav-link-one'}>About Me</li>    
                 </Link>
                 <Link to='/projects'>
-                    <li className={props.openMenu ? 'navlink link-two' : 'navlink hidden-nav-link'}>Projects</li>
+                    <li className={props.openMenu ? 'navlink link-two' : 'navlink hidden-nav-link-two'}>Projects</li>
                 </Link>
                 <Link to='/contact'>
-                    <li className={props.openMenu ? 'navlink link-three' : 'navlink hidden-nav-link'}>Contacts</li>
+                    <li className={props.openMenu ? 'navlink link-three' : 'navlink hidden-nav-link-three'}>Contacts</li>
                 </Link>
              
             </ul>
