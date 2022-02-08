@@ -31,14 +31,18 @@ function Nav(props) {
                 
             </div>
         </div>
-        <nav className={props.openMenu ? 'expanded-menu show-menu' : 'expanded-menu closed-menu'}>
+        <nav className={props.openMenu ? 'menu show-menu' : 'menu closed-menu'}>
             <ul className='link-list'>
                 <Link to='/about'>
-                    <li className={props.openMenu ? 'navlink link-one' : 'hidden'}>About Me</li>    
+                    <li className={props.openMenu ? 'navlink link-one' : 'navlink hidden-nav-link'}>About Me</li>    
                 </Link>
-                
-                <li className={props.openMenu ? 'navlink link-two' : 'hidden-nav-link'}>Portfolio</li>
-                <li className={props.openMenu ? 'navlink link-three' : 'hidden-nav-link'}>Contacts</li>
+                <Link to='/projects'>
+                    <li className={props.openMenu ? 'navlink link-two' : 'navlink hidden-nav-link'}>Projects</li>
+                </Link>
+                <Link to='/contact'>
+                    <li className={props.openMenu ? 'navlink link-three' : 'navlink hidden-nav-link'}>Contacts</li>
+                </Link>
+             
             </ul>
         </nav>
         </div>

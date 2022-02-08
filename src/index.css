@@ -3,14 +3,12 @@ html body {
 	font-family: 'EB Garamond', serif;
   height: 100vh;
   width: 100vw;
-  background-color: #113;
+  background-color: black;
+  color: #FFD700;
 }
 .app {
   display: flex;
-}
-.hidden {
-  opacity: 0;
-  height: 0;
+  position: relative;
 }
 .nav-wrapper {
   display: flex;
@@ -19,7 +17,7 @@ html body {
 .horizontal-wrapper {
 	display: flex;
 	justify-content: space-between;
-  background-color: white;
+  background-color: black;
 }
 .header-wrapper {
 	display: flex;
@@ -31,16 +29,16 @@ html body {
 .name-span {
   opacity: 0;
 	font-size: 2em;
-  color: red;
+  color: #FFD700;
   animation: fadeinred 1s ease 3.2s forwards
 }
 .title-span {
   opacity: 0;
-  color: red;
+  color: #FFD700;
   animation: fadeinred 1s ease 3.5s forwards
 }
 .hamburger {
-  color: red;
+  color: #FFD700;
   background-color: transparent;
   border: 0;
 }
@@ -53,7 +51,7 @@ html body {
   animation: fadeinred 1s ease 3.8s forwards;
 }
 .hb-line {
-  background-color: red;
+  background-color: #FFD700;
   width: 30px;
   height: 5px;
   margin: 3px;
@@ -76,16 +74,19 @@ html body {
 .hb-bottom-change {
   animation: bottom-change 0.5s ease forwards;
 }
-.closed-menu {
-  animation: fade-up 0.5s ease forwards;
-  transform-origin: bottom center;
-}
-.expanded-menu {
-  color: red;
+.menu {
+  background-color: white;
+  color: #FFD700;
+  position: absolute;
+  right: 10px;
+  top: 10%;
 }
 .show-menu {
-  background-color: white;
   animation: drop-down 1s ease 1 forwards;
+  transform-origin: top center;
+}
+.closed-menu{
+  animation: fade-up 1s ease 1 forwards;
   transform-origin: top center;
 }
 .link-list {
@@ -94,9 +95,10 @@ html body {
 .navlink {
   text-align: right;
   list-style: none;
-  color: red;
+  color: #FFD700;
   font-size: larger;
   padding: 15px;
+  opacity: 0;
 }
 .link-one {
   opacity: 0;
@@ -110,7 +112,10 @@ html body {
   opacity: 0;
   animation: fadeinred 1s ease 1.2s 1 forwards;
 }
+.hidden-nav-link {
+  opacity: 0;
 
+}
 .about-wrapper {
   display: flex;
   flex-direction: column;
@@ -142,7 +147,7 @@ html body {
   position: absolute;
   width: 3px;
   height: 0%;
-  background-color: red;
+  background-color: #FFD700;
   z-index: 999999;
 }
 .h1 {
@@ -172,48 +177,48 @@ html body {
 .k {
   opacity: 0;
   animation: fadeinred 1.8s ease 1.4s 1 forwards;
-  color: red;
+  color: #FFD700;
   font-size: xx-large;
 }
 @keyframes load1 {
-  0%{bottom:0;height:0;box-shadow: 0px 0px 5px 1px red}
-  10%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px red}
-  100%{top:0;height:100%;box-shadow: 0px 0px 5px 1px red}
+  0%{bottom:0;height:0;box-shadow: 0px 0px 5px 1px #FFD700}
+  10%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
+  100%{top:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
 }
 
 @keyframes load2 {
-  0%{top:0;height:0;box-shadow: 0px 0px 5px 1px red}
-  10%{top:0;height:100%;box-shadow: 0px 0px 5px 1px red}
-  100%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px red}
+  0%{top:0;height:0;box-shadow: 0px 0px 5px 1px #FFD700}
+  10%{top:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
+  100%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
 }
 
 @keyframes load3 {
-  0%{top:0;height:0;box-shadow: 0px 0px 5px 1px red}
-  10%{top:0;height:100%;box-shadow: 0px 0px 5px 1px red}
-  100%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px red}
+  0%{top:0;height:0;box-shadow: 0px 0px 5px 1px #FFD700}
+  10%{top:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
+  100%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
 }
 
 @keyframes load4 {
-  0%{top:0;height:0;box-shadow: 0px 0px 5px 1px red}
-  10%{top:0;height:100%;box-shadow: 0px 0px 5px 1px red}
-  100%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px red}
+  0%{top:0;height:0;box-shadow: 0px 0px 5px 1px #FFD700}
+  10%{top:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
+  100%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
 }
 
 @keyframes load5 {
-  0%{bottom:0;height:0;box-shadow: 0px 0px 5px 1px red}
-  10%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px red}
-  100%{top:0;height:100%;box-shadow: 0px 0px 5px 1px red}
+  0%{bottom:0;height:0;box-shadow: 0px 0px 5px 1px #FFD700}
+  10%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
+  100%{top:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
 }
 
 @keyframes load6 {
-  0%{bottom:0;height:0;box-shadow: 0px 0px 5px 1px red}
-  10%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px red}
-  100%{top:0;height:100%;box-shadow: 0px 0px 5px 1px red}
+  0%{bottom:0;height:0;box-shadow: 0px 0px 5px 1px #FFD700}
+  10%{bottom:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
+  100%{top:0;height:100%;box-shadow: 0px 0px 5px 1px #FFD700}
 }
 
 @keyframes fadeinred {
-  0%{opacity:0;text-shadow: 0px 10px 5px red, 0px -10px 5px, 10px 0px 5px, -10px 0px 5px}
-  30%{opacity:1;text-shadow: 0px 0px 5px red}
+  0%{opacity:0;text-shadow: 0px 10px 5px #FFD700, 0px -10px 5px, 10px 0px 5px, -10px 0px 5px}
+  30%{opacity:1;text-shadow: 0px 0px 5px #FFD700}
   100%{opacity:1;text-shadow: 0px 0px 0px}
 }
 
@@ -246,7 +251,13 @@ html body {
   0%{transform: scaleY(0)}
   100%{transform: scaleY(1)}
 }
+
 @keyframes fade-up {
+  0%{transform: scaleY(1)}
+  100%{transform: scaleY(0)}
+}
+
+@keyframes slide-open {
+  0%{transform: scaleX(0)}
   100%{transform: scaleY(1)}
-  0%{transform: scaleY(0)}
 }
