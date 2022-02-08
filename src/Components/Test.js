@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Welcome(props) {
+function Test(props) {
     return (
 			<section className='loader-container'>
 				<div className='loader-div'>
@@ -21,9 +21,9 @@ function Welcome(props) {
 						<span className='one h2 loader-span' />
 					</div>
 				</div>
-				<div className='k'>KS</div>
+                <div className="k">KS</div>
 			</section>
 		);
 }
 
-export default Welcome;
+export default Test;
