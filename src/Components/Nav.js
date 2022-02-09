@@ -16,14 +16,6 @@ function Nav(props) {
 						<span className='name-span'>Kurt Shields</span>
 						<span className='title-span'>Software Engineer</span>
 					</div>
-					{/* {!props.openMenu ? <button className="hamburger" onClick={handleClick}>Hamburger Menu</button> :
-            <div className="links-wrapper">
-                <Link to='/'>Home</Link>
-                <Link to='/about'>About</Link>
-                <Link to='/projects'>Projects</Link>
-                <Link to='/contact'>Contact</Link>
-                <button className="hamburger" onClick={handleClick}>X</button>    
-            </div>} */}
 					<div className='hb-wrapper' onClick={handleClick}>
 						<div
 							className={
@@ -53,7 +45,11 @@ function Nav(props) {
 										: 'navlink hidden-nav-link-one'
 								}
 								onClick={handleClick}>
-								About Me
+								<img
+									className='icon'
+									src='https://i.imgur.com/LvOmzYI.png'
+									alt='Icon of a Person'></img>
+								<p>About Me</p>
 							</li>
 						</Link>
 						<Link to='/projects'>
@@ -63,8 +59,12 @@ function Nav(props) {
 										? 'navlink link-two'
 										: 'navlink hidden-nav-link-two'
 								}
-                                onClick={handleClick}>
-								Projects
+								onClick={handleClick}>
+								<img
+									className='icon'
+									src='https://i.imgur.com/LvOmzYI.png'
+									alt='Icon of a Person'></img>
+								<p>Projects</p>
 							</li>
 						</Link>
 						<Link to='/contact'>
@@ -74,10 +74,29 @@ function Nav(props) {
 										? 'navlink link-three'
 										: 'navlink hidden-nav-link-three'
 								}
-                                onClick={handleClick}>
-								Contacts
+								onClick={handleClick}>
+								<img
+									className='icon'
+									src='https://i.imgur.com/LvOmzYI.png'
+									alt='Icon of a Person'></img>
+								<p>Contacts</p>
 							</li>
 						</Link>
+						<a href='https://docs.google.com/document/d/1iY7mssUNmZMcF04_ohwP5wRmclty29W2N0QQZcIz2rc/edit?usp=sharing'>
+							<li
+								className={
+									props.openMenu
+										? 'navlink link-four'
+										: 'navlink hidden-nav-link-four'
+								}
+								onClick={handleClick}>
+								<img
+									className='icon'
+									src='https://i.imgur.com/LvOmzYI.png'
+									alt='Icon of a Person'></img>
+								<p>Resume</p>
+							</li>
+						</a>
 					</ul>
 				</nav>
 			</div>
