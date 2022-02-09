@@ -12,6 +12,7 @@ html body {
 }
 a {
   text-decoration: none;
+  color: #ffd700;
 }
 .app {
   display: flex;
@@ -352,7 +353,35 @@ a {
   animation: textglow 1.5s linear infinite;
 }
 .p-wrapper {
-  font-size: 0.8em;
+  font-size: 0.78em;
+  margin-top: 0;
+  padding: 0;
+}
+.skills {
+  font-size: 0.78em;
+  text-align: center;
+  width: 100vw;
+}
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* justify-content: space-around; */
+  margin: 0;
+  padding: 0;
+}
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  /* justify-content: ; */
+  align-items: center;
+  clear: left;
+}
+.icon {
+  height: 30px;
+  width: 30px;
 }
 @keyframes load1 {
   0%{bottom:0;height:0;box-shadow: 0px 0px 5px 1px #FFD700}
