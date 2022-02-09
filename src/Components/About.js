@@ -5,11 +5,7 @@ function About(props) {
 			<div className='about-wrapper'>
                 <div className="p-wrapper">
 				    <p className='about-p about-p-one'>
-					Hi! The name's Kurt and I have a passion for creating and designing
-				    apps that will live on the internet. My software engineering journey
-				    began in 2005, in a cramped, repurposed US Army office in the heart of
-				    Seoul, Korea. The first tastes of HTML, CSS, and JavaScript would
-				    eventually entice me into pursuing a career in software engineering.
+                        Hello there! My name's Kurt and I have a passion for creating and designing web apps! My software engineering journey began in 2005 in the heart of Korea. As a fresh graduate from high school, I began learning JavaScript and HTML in a cramped, repurposed office that once belonged to the Army. These first tastes of coding would shape my need to tinker with everything around me, and would eventually lead me back to the world of software engineering.
 				    </p>
                     <div className='gold-one'></div>
                 </div>
@@ -17,7 +13,7 @@ function About(props) {
                 <div className='p-wrapper'>
                     <div className='gold-one'></div>
                 <p className='about-p about-p-two'>
-                    While my life took me on a detour down a different industry for over a decade, I have returned to my first passion. I began by getting caught up with an intense Software Engineering Immersive at General Assembly, and I am looking forward to starting my career in the exciting and fast paced software development industry.
+                    While my life took me on a detour into private security industry for over a decade, I have never lost the passion for code or tinkering. Following the events of 2020, I felt it was time for a change. I began by getting started up with an intense Software Engineering Immersive at General Assembly, where I was able to sharpen my skills. I am looking forward to starting my career in the exciting and fast paced software development industry!
                 </p>
                 </div>
                 <div>

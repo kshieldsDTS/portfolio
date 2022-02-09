@@ -192,13 +192,13 @@ a {
 .gold-one {
   width: 1px;
   background-color: gold;
-  animation: glow 3s ease infinite;
+  animation: glow 10s linear infinite;
 }
 .gold-two {
   height: 1px;
   width: 50%;
   background-color: gold;
-  animation: glow 3s ease infinite;
+  animation: glow 10s linear infinite;
 }
 .outer-container{
   display: flex;
@@ -266,7 +266,10 @@ a {
   color: #FFD700;
   font-size: 1em;
   position: absolute;
-  z-index: 1
+  z-index: 1;
+}
+.kcenter {
+  opacity: 0;
 }
 .flexcontainer-one {
   /* top left */
@@ -311,24 +314,24 @@ a {
   animation: slideout-six 1s ease 3.6s 1 forwards;
 }
 .k1 {
-  transform: translateX(-44px) translateY(-74px);
+  transform: translateX(-64px) translateY(-90px);
   animation: fadein 1s ease 3.6s forwards
 }
 .k2 {
-  transform: translateX(44px) translateY(-74px);
+  transform: translateX(12px) translateY(-90px);
   animation: fadein 1s ease 3.7s forwards
 }
 .k3 {
-  transform: translateX(88px);
+  transform: translateX(63px) translateY(-16px);
   animation: fadein 1s ease 3.8s forwards
 }
 .k4 {
-  transform: translateX(44px) translateY(78px);
+  transform: translateX(24px) translateY(63px);
   animation: fadein 1s ease 3.9s forwards;
   z-index: 1
 }
 .k5 {
-  transform: translateX(-44px) translateY(78px);
+  transform: translateX(-69px) translateY(63px);
   animation: fadein 1s ease 4.0s forwards
 }
 .k6 {
@@ -345,8 +348,11 @@ a {
 .k p{
   text-shadow: 0px 0px 1px gold;
 }
-.k p:hover{
+.k p:hover {
   animation: textglow 1.5s linear infinite;
+}
+.p-wrapper {
+  font-size: 0.8em;
 }
 @keyframes load1 {
   0%{bottom:0;height:0;box-shadow: 0px 0px 5px 1px #FFD700}
@@ -418,9 +424,9 @@ a {
   --animation-time: 2s;
 }
 @keyframes glow {
-  0%{box-shadow: 0 0 9px gold;}
-  50%{box-shadow: 0 0 18px gold;}
-  100%{box-shadow: 0 0 9px gold;}
+  0%{box-shadow: 0 0 50px gold;}
+  50%{box-shadow: 0 0 0px gold;}
+  100%{box-shadow: 0 0 50px gold;}
 }
 @keyframes slideout-one {
   0%{transform: translateY(-25px) translateX(-44px); opacity: 0}

@@ -23,7 +23,9 @@ function Welcome(props) {
 							<span className='one h2 loader-span' />
 						</div>
 					</div>
-					<div className='k'>KS</div>
+					<div className='k kcenter'>
+						<p>KS</p>
+					</div>
 					<Link to='/about'>
 						<div className='k k1 link'>
 							<p>About</p>
@@ -34,21 +36,21 @@ function Welcome(props) {
 							<p>Projects</p>
 						</div>
 					</Link>
-					<Link to='www.linkedin.com/in/kurt-shields'>
+					<a href='https://www.linkedin.com/in/kurt-shields/'>
 						<div className='k k3 link'>
 							<p>LinkedIn</p>
 						</div>
-					</Link>
+					</a>
 					<a href='https://github.com/kshieldsDTS'>
 						<div className='k k4 link'>
 							<p>GitHub</p>
 						</div>
 					</a>
-					<Link to='../Assets/Kurt Shields Resume 2-8.pdf'>
+					<a href='https://docs.google.com/document/d/1iY7mssUNmZMcF04_ohwP5wRmclty29W2N0QQZcIz2rc/edit?usp=sharing'>
 						<div className='k k5 link'>
 							<p>Resume</p>
 						</div>
-					</Link>
+					</a>
 					<div className='k k6 link'>
 						<p>???</p>
 					</div>

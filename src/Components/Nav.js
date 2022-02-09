@@ -55,7 +55,7 @@ function Nav(props) {
 										? 'navlink link-two'
 										: 'navlink hidden-nav-link-two'
 								}
-                                onClick={handleClick}>
+								onClick={handleClick}>
 								Projects
 							</li>
 						</Link>
@@ -66,19 +66,21 @@ function Nav(props) {
 										? 'navlink link-three'
 										: 'navlink hidden-nav-link-three'
 								}
-                                onClick={handleClick}>
+								onClick={handleClick}>
 								Contacts
 							</li>
 						</Link>
-						<Link to='../Assets/Kurt Shields Resume 2-8.pdf'>
-							<li 
+						<a href='https://docs.google.com/document/d/1iY7mssUNmZMcF04_ohwP5wRmclty29W2N0QQZcIz2rc/edit?usp=sharing'>
+							<li
 								className={
-									props.openMenu ? 'navlink link-four' : 'navlink hidden-nav-link-four'
+									props.openMenu
+										? 'navlink link-four'
+										: 'navlink hidden-nav-link-four'
 								}
 								onClick={handleClick}>
-									Resume
-								</li>
-						</Link>
+								Resume
+							</li>
+						</a>
 					</ul>
 				</nav>
 			</div>
