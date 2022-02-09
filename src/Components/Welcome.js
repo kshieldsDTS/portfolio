@@ -24,7 +24,7 @@ function Welcome(props) {
 						</div>
 					</div>
 					<div className='k kcenter'>
-						<p>KS</p>
+						<p className='ks'>KS</p>
 					</div>
 					<Link to='/about'>
 						<div className='k k1 link'>

@@ -2,6 +2,10 @@
   font-family: 'azonix';
   src: url('../src/Assets/Azonix-1VB0.otf');
 }
+@font-face {
+  font-family: 'portico-outline';
+  src: url('../src/Assets/Portico\ Outline.otf')
+}
 html body {
 	margin: 0;
 	font-family: 'azonix', sans-serif;
@@ -326,6 +330,12 @@ a {
   /* transform: translateX(-132px) translateY(-25px); */
   animation: slideout-six 1s ease 3.6s 1 forwards;
 }
+.ks {
+  font-family: 'portico-outline', sans-serif;
+  font-size: 2em;
+  text-shadow: 0px 0px 0px gold;
+  animation: textglow 3s ease infinite forwards;
+}
 .k1 {
   transform: translateX(-64px) translateY(-90px);
   animation: fadein 1s ease 3.6s forwards
@@ -358,9 +368,9 @@ a {
   text-align: center;
   font-size: 0.7em;
 }
-.k p{
+/* .k p{
   text-shadow: 0px 0px 1px gold;
-}
+} */
 .k p:hover {
   animation: textglow 1.5s linear infinite;
 }
@@ -434,7 +444,7 @@ a {
 @keyframes fadein {
   0%{opacity:0;text-shadow: 0px 10px 5px #FFD700, 0px -10px 5px, 10px 0px 5px, -10px 0px 5px}
   30%{opacity:1;text-shadow: 0px 0px 5px #FFD700}
-  100%{opacity:1;text-shadow: 0px 0px 0px}
+  100%{opacity:1;text-shadow: 0px 0px 0px gold}
 }
 
 @keyframes fadeout {
@@ -494,6 +504,7 @@ a {
   100%{transform: translateX(-132px) translateY(-25px); opacity: 1}
 }
 @keyframes textglow {
-  0%{text-shadow: 0px 0px 1px gold;}
-  100%{text-shadow: 0px 0px 45px gold;}
+  0%{text-shadow: 0px 0px 0px gold;}
+  50%{text-shadow: 0px 0px 5px gold;}
+  100%{text-shadow: 0px 0px 0px gold;}
 }
