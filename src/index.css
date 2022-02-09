@@ -111,14 +111,26 @@ a {
 }
 .link-list {
   margin: 15px;
+  padding: 10px;
 }
 .navlink {
   text-align: right;
   list-style: none;
   color: #FFD700;
   font-size: larger;
-  padding: 15px;
+  padding: 0;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 175px;
 }
+.navlink img{
+  flex-basis: 10%;
+}
+.navlink p{
+  flex-basis: 90%;
+}
+
 .link-one {
   opacity: 1;
   transform: scaleX(1);

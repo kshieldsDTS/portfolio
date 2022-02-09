@@ -45,7 +45,11 @@ function Nav(props) {
 										: 'navlink hidden-nav-link-one'
 								}
 								onClick={handleClick}>
-								About Me
+								<img
+									className='icon'
+									src='https://i.imgur.com/LvOmzYI.png'
+									alt='Icon of a Person'></img>
+								<p>About Me</p>
 							</li>
 						</Link>
 						<Link to='/projects'>
@@ -56,7 +60,11 @@ function Nav(props) {
 										: 'navlink hidden-nav-link-two'
 								}
 								onClick={handleClick}>
-								Projects
+								<img
+									className='icon'
+									src='https://i.imgur.com/LvOmzYI.png'
+									alt='Icon of a Person'></img>
+								<p>Projects</p>
 							</li>
 						</Link>
 						<Link to='/contact'>
@@ -67,7 +75,11 @@ function Nav(props) {
 										: 'navlink hidden-nav-link-three'
 								}
 								onClick={handleClick}>
-								Contacts
+								<img
+									className='icon'
+									src='https://i.imgur.com/LvOmzYI.png'
+									alt='Icon of a Person'></img>
+								<p>Contacts</p>
 							</li>
 						</Link>
 						<a href='https://docs.google.com/document/d/1iY7mssUNmZMcF04_ohwP5wRmclty29W2N0QQZcIz2rc/edit?usp=sharing'>
@@ -78,7 +90,11 @@ function Nav(props) {
 										: 'navlink hidden-nav-link-four'
 								}
 								onClick={handleClick}>
-								Resume
+								<img
+									className='icon'
+									src='https://i.imgur.com/LvOmzYI.png'
+									alt='Icon of a Person'></img>
+								<p>Resume</p>
 							</li>
 						</a>
 					</ul>
