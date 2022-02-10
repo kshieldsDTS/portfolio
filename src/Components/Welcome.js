@@ -32,28 +32,18 @@ function Welcome(props) {
 						</div>
 					</Link>
 					<Link to='/projects'>
-						<div className='k k2 link'>
-							<p>Projects</p>
-						</div>
+						<div className='k k2 link'><p>Projects</p></div>
 					</Link>
 					<a href='https://www.linkedin.com/in/kurt-shields/'>
-						<div className='k k3 link'>
-							<p>LinkedIn</p>
-						</div>
+						<div className='k k3 link'><p>LinkedIn</p></div>
 					</a>
 					<a href='https://github.com/kshieldsDTS'>
-						<div className='k k4 link'>
-							<p>GitHub</p>
-						</div>
+						<div className='k k4 link'><p>GitHub</p></div>
 					</a>
 					<a href='https://docs.google.com/document/d/1iY7mssUNmZMcF04_ohwP5wRmclty29W2N0QQZcIz2rc/edit?usp=sharing'>
-						<div className='k k5 link'>
-							<p>Resume</p>
-						</div>
+						<div className='k k5 link'><p>Resume</p></div>
 					</a>
-					<div className='k k6 link'>
-						<p>???</p>
-					</div>
+					<div className='k k6 link'><p>???</p></div>
 					<div className='flexcontainer-one'>
 						<div className='loader-div icon-one'>
 							<div className='loader-div-inner'>
