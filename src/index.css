@@ -60,15 +60,12 @@ a {
 .name-span {
 	opacity: 1;
 	font-size: 1.3em;
-	color: #ffd700;
 }
 .title-span {
 	opacity: 1;
 	font-size: 0.7em;
-	color: #ffd700;
 }
 .hamburger {
-	color: #ffd700;
 	background-color: transparent;
 	border: 0;
 }
@@ -135,7 +132,6 @@ a {
 }
 .menu {
 	background-color: #333;
-	color: #ffd700;
 	position: absolute;
 	right: 1%;
 	top: 6.8%;
@@ -165,11 +161,9 @@ a {
 .navlink {
 	text-align: right;
 	list-style: none;
-	color: #ffd700;
 	font-size: larger;
 	padding: 0;
 	display: flex;
-	/* justify-content: space-between; */
 	align-items: center;
 	width: 175px;
 }
