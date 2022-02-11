@@ -1,8 +1,9 @@
 import React from 'react';
-
+import tofu from '../Assets/kurt and tofu.jpeg'
 function About(props) {
     return (
 			<div className='about-wrapper'>
+				<img className='tofu' src={tofu} alt='Kurt and his Bordie Collie, Tofu'></img>
 				<div className='p-wrapper'>
 					<p className='about-p about-p-one'>
 						Hello there! My name's Kurt and I have a passion for creating and
