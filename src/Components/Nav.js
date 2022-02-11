@@ -12,27 +12,31 @@ function Nav(props) {
     return (
 			<div className='nav-wrapper'>
 				<div className='horizontal-wrapper'>
-					<div className='header-wrapper'>
-						<span className='name-span'>Kurt Shields</span>
-						<span className='title-span'>Software Engineer</span>
-					</div>
+					<Link to='/'>
+						<div className='header-wrapper'>
+							<span className='name-span'>Kurt Shields</span>
+							<span className='title-span'>Software Engineer</span>
+						</div>
+					</Link>
 					<div className='hb-wrapper' onClick={handleClick}>
-						<div
-							className={
-								!props.openMenu ? 'hb-line hb-top' : 'hb-line hb-top-change'
-							}></div>
-						<div
-							className={
-								!props.openMenu
-									? 'hb-line hb-middle'
-									: 'hb-line hb-middle-change'
-							}></div>
-						<div
-							className={
-								!props.openMenu
-									? 'hb-line hb-bottom'
-									: 'hb-line hb-bottom-change'
-							}></div>
+						<div className='line-wrap'>
+							<div className={!props.openMenu ? 'hb-line hb-top-left' : 'hb-line hb-top-left-change'}>
+							</div>
+							<div className={!props.openMenu ? 'hb-line hb-top-right' : 'hb-line hb-top-right-change'}>
+							</div>
+						</div>
+						<div className='line-wrap'>
+							<div className={!props.openMenu ? 'hb-line hb-middle-left' : 'hb-line hb-middle-left-change'}>		
+							</div>
+							<div className={!props.openMenu ? 'hb-line hb-middle-right' : 'hb-line hb-middle-right-change'}>		
+							</div>
+						</div>
+						<div className='line-wrap'>						
+							<div className={!props.openMenu ? 'hb-line hb-bottom-left' : 'hb-line hb-bottom-left-change'}>
+							</div>
+							<div className={!props.openMenu ? 'hb-line hb-bottom-right' : 'hb-line hb-bottom-right-change'}>
+							</div>
+						</div>
 					</div>
 				</div>
 				<nav className={props.openMenu ? 'menu show-menu' : 'menu closed-menu'}>
@@ -45,10 +49,6 @@ function Nav(props) {
 										: 'navlink hidden-nav-link-one'
 								}
 								onClick={handleClick}>
-								<img
-									className='icon'
-									src='https://i.imgur.com/LvOmzYI.png'
-									alt='Icon of a Person'></img>
 								<p>About Me</p>
 							</li>
 						</Link>
@@ -60,10 +60,6 @@ function Nav(props) {
 										: 'navlink hidden-nav-link-two'
 								}
 								onClick={handleClick}>
-								<img
-									className='icon'
-									src='https://i.imgur.com/LvOmzYI.png'
-									alt='Icon of a Person'></img>
 								<p>Projects</p>
 							</li>
 						</Link>
@@ -75,10 +71,6 @@ function Nav(props) {
 										: 'navlink hidden-nav-link-three'
 								}
 								onClick={handleClick}>
-								<img
-									className='icon'
-									src='https://i.imgur.com/LvOmzYI.png'
-									alt='Icon of a Person'></img>
 								<p>Contacts</p>
 							</li>
 						</Link>
@@ -90,10 +82,6 @@ function Nav(props) {
 										: 'navlink hidden-nav-link-four'
 								}
 								onClick={handleClick}>
-								<img
-									className='icon'
-									src='https://i.imgur.com/LvOmzYI.png'
-									alt='Icon of a Person'></img>
 								<p>Resume</p>
 							</li>
 						</a>
