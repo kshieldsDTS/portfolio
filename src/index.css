@@ -806,7 +806,7 @@ a {
 		align-items: center;
 		position: absolute;
 		width: 200px;
-		transform: translateX(40px);
+		transform: translateX(40px)
 	}
 	.nopointer {
 		opacity: 0;
