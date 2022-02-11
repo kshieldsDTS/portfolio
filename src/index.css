@@ -800,17 +800,19 @@ a {
 	}
 	.pointer {
 		display: flex;
+		flex-direction: row;
 		opacity: 0;
 		animation: fadein 15s ease 2s 1 forwards;
 		align-items: center;
 		position: absolute;
-		width: 140px;
+		width: 200px;
+		transform: translateX(40px);
 	}
-		.nopointer {
+	.nopointer {
 		opacity: 0;
 		display: flex;
 		position: absolute;
-		width: 140px;
+		width: 200px;
 	}
 	.arrow {
 		border: solid #ffd700;
