@@ -31,6 +31,10 @@ function Welcome(props) {
 				<div className='k kcenter' onClick={toggleRadial}>
 					<p className='ks'>KS</p>
 				</div>
+				<div className={!radialOpen ? 'pointer' : 'nopointer' }>
+					<i className={!radialOpen ? 'arrow' : 'noarrow'}></i>
+					<p className={!radialOpen ? 'click' : 'noclick'}>Tap the Hex</p>
+				</div>
 				<div className='radial-links'>
 					<Link to='/about'>
 						<div className={radialOpen ? 'k k1 link' : 'k k1 link k1-hidden'}>
