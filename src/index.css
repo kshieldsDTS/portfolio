@@ -509,8 +509,42 @@ a {
 .k p:hover {
 	animation: textglow 1.5s linear infinite;
 }
-
-
+.pointer {
+	display: flex;
+	flex-direction: column;
+	opacity: 0;
+	animation: fadein 15s ease 2s 1 forwards;
+	align-items: center;
+	position: absolute;
+	width: 140px;
+}
+.nopointer {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+	width: 140px;
+}
+.arrow {
+	border: solid #ffd700;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(-135deg);
+	opacity: 1;
+	transition: opacity 0.5s;
+	transition-delay: 1s;
+	animation: bounceup 3s ease infinite forwards;
+}
+.noarrow {
+	opacity: 0;
+	transition: opacity 1.5s;
+	transition-delay: 1s;
+}
+.click {
+	animation: textglow 3s ease infinite forwards;
+	font-size: 1.2em;
+	transform: translateY(110px);
+}
 .p-wrapper {
 	font-size: 0.78em;
 	margin-top: 0;
@@ -713,14 +747,6 @@ a {
 		text-shadow: 0px 0px 0px gold;
 	}
 }
-/* @keyframes fadeout {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-} */
 @keyframes glow {
 	0% {
 		box-shadow: 0 0 0px gold;
@@ -743,11 +769,68 @@ a {
 		text-shadow: 0px 0px 0px gold;
 	}
 }
-@media only screen and (min-width: 600px) {
+@keyframes bounceup {
+	0%{
+		transform: translateY(125px) rotate(-135deg) scaleX(2) scaleY(2); box-shadow: 1px 1px gold; opacity: 1;
+	}
+	50%{
+		transform: translateY(115px) rotate(-135deg) scaleX(2.3) scaleY(2.3); box-shadow: 2px 2px gold; opacity: 0.7;
+	}
+	100%{
+		transform: translateY(125px) rotate(-135deg) scaleX(2) scaleY(2); box-shadow: 1px 1px gold; opacity: 1;
+	}
+}
+@keyframes bounceleft {
+	0%{
+		transform: translateX(145px) rotate(135deg) scaleX(2) scaleY(2); box-shadow: 1px 1px gold; opacity: 1;
+	}
+	50%{
+		transform: translateX(135px) rotate(135deg) scaleX(2.3) scaleY(2.3); box-shadow: 2px 2px gold; opacity: 0.7;
+	}
+	100%{
+		transform: translateX(145px) rotate(135deg) scaleX(2) scaleY(2); box-shadow: 1px 1px gold; opacity: 1;
+	}
+}
+@media only screen and (min-width: 760px) {
 	.tofu {
 		display: block;
 		width: 30%;
 		margin-bottom: 10px;
 		animation: glow 3s ease infinite forwards;
+	}
+	.pointer {
+		display: flex;
+		opacity: 0;
+		animation: fadein 15s ease 2s 1 forwards;
+		align-items: center;
+		position: absolute;
+		width: 140px;
+	}
+		.nopointer {
+		opacity: 0;
+		display: flex;
+		position: absolute;
+		width: 140px;
+	}
+	.arrow {
+		border: solid #ffd700;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 3px;
+		transform: rotate(135deg);
+		opacity: 1;
+		transition: opacity 0.5s;
+		transition-delay: 1s;
+		animation: bounceleft 3s ease infinite forwards;
+	}
+	.noarrow {
+		opacity: 0;
+		transition: opacity 1.5s;
+		transition-delay: 1s;
+	}
+	.click {
+		transform: translateX(150px);
+		animation: textglow 3s ease infinite forwards;
+		font-size: 1.2em;
 	}
 }
