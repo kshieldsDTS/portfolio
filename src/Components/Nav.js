@@ -20,22 +20,46 @@ function Nav(props) {
 					</Link>
 					<div className='hb-wrapper' onClick={handleClick}>
 						<div className='line-wrap'>
-							<div className={!props.openMenu ? 'hb-line hb-top-left' : 'hb-line hb-top-left-change'}>
-							</div>
-							<div className={!props.openMenu ? 'hb-line hb-top-right' : 'hb-line hb-top-right-change'}>
-							</div>
+							<div
+								className={
+									!props.openMenu
+										? 'hb-line hb-top-left'
+										: 'hb-line hb-top-left-change'
+								}></div>
+							<div
+								className={
+									!props.openMenu
+										? 'hb-line hb-top-right'
+										: 'hb-line hb-top-right-change'
+								}></div>
 						</div>
 						<div className='line-wrap'>
-							<div className={!props.openMenu ? 'hb-line hb-middle-left' : 'hb-line hb-middle-left-change'}>		
-							</div>
-							<div className={!props.openMenu ? 'hb-line hb-middle-right' : 'hb-line hb-middle-right-change'}>		
-							</div>
+							<div
+								className={
+									!props.openMenu
+										? 'hb-line hb-middle-left'
+										: 'hb-line hb-middle-left-change'
+								}></div>
+							<div
+								className={
+									!props.openMenu
+										? 'hb-line hb-middle-right'
+										: 'hb-line hb-middle-right-change'
+								}></div>
 						</div>
-						<div className='line-wrap'>						
-							<div className={!props.openMenu ? 'hb-line hb-bottom-left' : 'hb-line hb-bottom-left-change'}>
-							</div>
-							<div className={!props.openMenu ? 'hb-line hb-bottom-right' : 'hb-line hb-bottom-right-change'}>
-							</div>
+						<div className='line-wrap'>
+							<div
+								className={
+									!props.openMenu
+										? 'hb-line hb-bottom-left'
+										: 'hb-line hb-bottom-left-change'
+								}></div>
+							<div
+								className={
+									!props.openMenu
+										? 'hb-line hb-bottom-right'
+										: 'hb-line hb-bottom-right-change'
+								}></div>
 						</div>
 					</div>
 				</div>
@@ -74,7 +98,7 @@ function Nav(props) {
 								<p>Contacts</p>
 							</li>
 						</Link>
-						<a href='https://docs.google.com/document/d/1iY7mssUNmZMcF04_ohwP5wRmclty29W2N0QQZcIz2rc/edit?usp=sharing'>
+						<a href='https://drive.google.com/file/d/1QQkEYF94tr0VKS1mF43Re-R0AZyL6uAN/view?usp=sharing'>
 							<li
 								className={
 									props.openMenu

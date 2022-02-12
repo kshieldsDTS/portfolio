@@ -31,7 +31,7 @@ function Welcome(props) {
 				<div className='k kcenter' onClick={toggleRadial}>
 					<p className='ks'>KS</p>
 				</div>
-				<div className={!radialOpen ? 'pointer' : 'nopointer' }>
+				<div className={!radialOpen ? 'pointer' : 'nopointer'}>
 					<i className={!radialOpen ? 'arrow' : 'noarrow'}></i>
 					<p className={!radialOpen ? 'click' : 'noclick'}>Tap the Hex</p>
 				</div>
@@ -56,7 +56,7 @@ function Welcome(props) {
 							<p>GitHub</p>
 						</div>
 					</a>
-					<a href='https://docs.google.com/document/d/1iY7mssUNmZMcF04_ohwP5wRmclty29W2N0QQZcIz2rc/edit?usp=sharing'>
+					<a href='https://drive.google.com/file/d/1QQkEYF94tr0VKS1mF43Re-R0AZyL6uAN/view?usp=sharing'>
 						<div className={radialOpen ? 'k k5 link' : 'k k5 link k5-hidden'}>
 							<p>Resume</p>
 						</div>
