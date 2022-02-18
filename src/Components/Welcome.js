@@ -56,7 +56,7 @@ function Welcome(props) {
 							<p>GitHub</p>
 						</div>
 					</a>
-					<a href='https://drive.google.com/file/d/1QQkEYF94tr0VKS1mF43Re-R0AZyL6uAN/view?usp=sharing'>
+					<a href='https://drive.google.com/file/d/1Gn6h0vSI9Ik3BmNXGS_qyc8CqGBF2zu0/view?usp=sharing'>
 						<div className={radialOpen ? 'k k5 link' : 'k k5 link k5-hidden'}>
 							<p>Resume</p>
 						</div>
