@@ -98,7 +98,7 @@ function Nav(props) {
 								<p>Contacts</p>
 							</li>
 						</Link>
-						<a href='https://drive.google.com/file/d/1Gn6h0vSI9Ik3BmNXGS_qyc8CqGBF2zu0/view?usp=sharing'>
+						<a href='https://docs.google.com/document/d/1iY7mssUNmZMcF04_ohwP5wRmclty29W2N0QQZcIz2rc/edit?usp=sharing'>
 							<li
 								className={
 									props.openMenu
