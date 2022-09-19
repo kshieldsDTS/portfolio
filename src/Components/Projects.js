@@ -6,7 +6,7 @@ const axios = require('axios')
 function Projects(props) {
     const [fetchedProjects, setFetchedProjects] = useState()
     useEffect(() => {
-        const url = 'https://arcane-hills614.herokuapp.com/api/projects/';
+        const url = 'https://ancient-tor-26332.herokuapp.com/api/projects/';
         (async () => {
             try {
                 const fetchedData = await axios.get(url)
