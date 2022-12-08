@@ -592,6 +592,7 @@ a {
 }
 .project-preview {
 	max-width: 80%;
+	max-height: 250px;
 }
 .projects-wrapper p {
 	width: 60%;
