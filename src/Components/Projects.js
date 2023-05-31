@@ -3,12 +3,42 @@ import React from 'react';
 function Projects(props) {
     return (
 			<div className='projects-wrapper'>
+				<p>MKS</p>
+				<img
+					className='project-preview'
+					src='https://user-images.githubusercontent.com/94239332/154572842-bbdc77bc-6ff7-42e3-a56d-cd61457cf1b4.png'
+					alt='A listing of work on an online job board.'></img>
+				<p>JavaScript, HTML, CSS, MongoDB, Express, React, Node, bcrypt, JSON Web Token</p>
+				<p>
+					A blog site for a movie and television critic and reviewer. Utilizes bcrypt to hash and protect user information, while using JSON Web Token to prevent unauthorized editing or changes to the site.
+				</p>
+				<a
+					href='https://github.com/kshieldsDTS/mks-project'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Front End GitHub Repository
+				</a>
+				<div className='gold-two'></div>
+				<a
+					href='https://github.com/kshieldsDTS/mks-back'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Back End GitHub Repository
+				</a>
+				<div className='gold-two'></div>
+				<a
+					href='https://mks-blog.netlify.app/'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Deployed Application
+				</a>
+				<div className='gold-two'></div>
 				<p>inDecoders</p>
 				<img
 					className='project-preview'
 					src='https://user-images.githubusercontent.com/94239332/154572842-bbdc77bc-6ff7-42e3-a56d-cd61457cf1b4.png'
 					alt='A listing of work on an online job board.'></img>
-				<p>React, JavaScript, HTML, CSS</p>
+				<p>JavaScript, HTML, CSS, NoSQL, Django REST Frameworks, React, Node</p>
 				<p>
 					An online job board for software developers and content creators.
 					Users can sign up, post that they are looking for work, or that they
@@ -41,11 +71,11 @@ function Projects(props) {
 					className='project-preview'
 					src='https://user-images.githubusercontent.com/93807931/151850324-b7fbf870-3ab6-47e2-84e2-4f53a75ff9ce.png'
 					alt='A kanban style project board'></img>
-				<p>React, JavaScript, HTML, CSS</p>
+				<p>JavaScript, HTML, CSS, MongoDB, Express, React, Node</p>
 				<p>
 					A kanban style project management board utilizing a MERN stack to
 					catalogue and update tasks. A user login system prevents unauthorized
-					users from making edits to the project. .Hosting issues are preventing
+					users from making edits to the project. Hosting issues are preventing
 					API calls at the moment.
 				</p>
 				<a
