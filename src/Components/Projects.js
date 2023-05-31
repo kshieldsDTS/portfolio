@@ -3,6 +3,39 @@ import React from 'react';
 function Projects(props) {
     return (
 			<div className='projects-wrapper'>
+				<p>inDecoders</p>
+				<img
+					className='project-preview'
+					src='https://user-images.githubusercontent.com/94239332/154572842-bbdc77bc-6ff7-42e3-a56d-cd61457cf1b4.png'
+					alt='A listing of work on an online job board.'></img>
+				<p>React, JavaScript, HTML, CSS</p>
+				<p>
+					An online job board for software developers and content creators.
+					Users can sign up, post that they are looking for work, or that they
+					may be looking for additional hands to work on a project of their own.
+					Hosting issues are preventing API calls at the moment.
+				</p>
+				<a
+					href='https://github.com/kshieldsDTS/inDecoders-front'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Front End GitHub Repository
+				</a>
+				<div className='gold-two'></div>
+				<a
+					href='https://github.com/kshieldsDTS/inDecoders-back'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Back End GitHub Repository
+				</a>
+				<div className='gold-two'></div>
+				<a
+					href='https://indecoders.netlify.app/'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Deployed Application
+				</a>
+				<div className='gold-two'></div>
 				<p>Agiliteam Kanban Planner</p>
 				<img
 					className='project-preview'
@@ -26,7 +59,7 @@ function Projects(props) {
 					href='https://github.com/kshieldsDTS/agiliteam-back-end'
 					target='_blank'
 					rel='noopener noreferrer'>
-					Front End GitHub Repository
+					Back End GitHub Repository
 				</a>
 				<div className='gold-two'></div>
 				<a
