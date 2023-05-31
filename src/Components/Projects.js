@@ -1,22 +1,6 @@
 import React from 'react';
-import { useEffect, useState } from 'react'
-
-const axios = require('axios')
 
 function Projects(props) {
-    const [fetchedProjects, setFetchedProjects] = useState()
-    useEffect(() => {
-        const url = 'https://ancient-tor-26332.herokuapp.com/api/projects/';
-        (async () => {
-            try {
-                const fetchedData = await axios.get(url)
-                const sortedData = fetchedData.data.sort((a, b) => a.id - b.id)
-                setFetchedProjects(sortedData.reverse())
-            } catch (error) {
-                console.error(error)
-            }
-        })()
-    }, [])
     return (
 			<div className='projects-wrapper'>
 				<p>Towers of Hanoi</p>
