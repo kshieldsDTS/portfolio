@@ -12,6 +12,7 @@ function Projects(props) {
 				<p>
 					A blog site for a movie and television critic and reviewer. Utilizes bcrypt to hash and protect user information, while using JSON Web Token to prevent unauthorized editing or changes to the site.
 				</p>
+				<p>--Still a work in progress!--</p>
 				<a
 					href='https://github.com/kshieldsDTS/mks-project'
 					target='_blank'
