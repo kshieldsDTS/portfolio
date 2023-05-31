@@ -19,24 +19,6 @@ function Projects(props) {
     }, [])
     return (
 			<div className='projects-wrapper'>
-				<p>{project.name}</p>
-				<img
-					className='project-preview'
-					src={project.preview_image}
-					alt='Kurt and Tofu'></img>
-				<p>{project.tools}</p>
-				<p>{project.description}</p>
-				<a href={project.github_url} target='_blank' rel='noopener noreferrer'>
-					GitHub Repository
-				</a>
-				<div className='gold-two'></div>
-				<a
-					href={project.deployed_url}
-					target='_blank'
-					rel='noopener noreferrer'>
-					Deployed Application
-				</a>
-				<div className='gold-two'></div>
 				<p>Towers of Hanoi</p>
 				<img
 					className='project-preview'
