@@ -6,7 +6,7 @@ function Projects(props) {
 				<p>Towers of Hanoi</p>
 				<img
 					className='project-preview'
-					src='https://github.com/kshieldsDTS/towers-of-hanoi/blob/main/assets/towers-of-hanoi.png'
+					src='https://github.com/kshieldsDTS/towers-of-hanoi/blob/main/assets/towers-of-hanoi.png?raw=true'
 					alt='Kurt and Tofu'></img>
 				<p>JavaScript, HTML, CSS</p>
 				<p>
