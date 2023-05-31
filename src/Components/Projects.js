@@ -3,6 +3,39 @@ import React from 'react';
 function Projects(props) {
     return (
 			<div className='projects-wrapper'>
+				<p>Agiliteam Kanban Planner</p>
+				<img
+					className='project-preview'
+					src='https://user-images.githubusercontent.com/93807931/151850324-b7fbf870-3ab6-47e2-84e2-4f53a75ff9ce.png'
+					alt='A kanban style project board'></img>
+				<p>React, JavaScript, HTML, CSS</p>
+				<p>
+					A kanban style project management board utilizing a MERN stack to
+					catalogue and update tasks. A user login system prevents unauthorized
+					users from making edits to the project. .Hosting issues are preventing
+					API calls at the moment.
+				</p>
+				<a
+					href='https://github.com/kshieldsDTS/agiliteam-front-end'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Front End GitHub Repository
+				</a>
+				<div className='gold-two'></div>
+				<a
+					href='https://github.com/kshieldsDTS/agiliteam-back-end'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Front End GitHub Repository
+				</a>
+				<div className='gold-two'></div>
+				<a
+					href='https://agiliteam.netlify.app/'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Deployed Application
+				</a>
+				<div className='gold-two'></div>
 				<p>Fifth Edition Text Adventure</p>
 				<img
 					className='project-preview'
